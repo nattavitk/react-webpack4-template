@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Components/Home';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 import './style/main.less';
 
-const Welcome = () => {
-	return <Home />;
-};
-
-ReactDOM.render(<Welcome />, document.getElementById('root'));
+ReactDOM.render(
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
+	document.getElementById('root')
+);
